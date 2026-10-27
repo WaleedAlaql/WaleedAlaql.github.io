@@ -44,8 +44,6 @@ h1 { margin: 18px 0 8px; text-align: center; font-size: clamp(34px, 9vw, 46px); 
 }
 .who { flex: 1; min-width: 0; }
 .who h2 { margin: 0; font-size: 20px; font-weight: 700; line-height: 1.4; }
-.who a.gh { display: inline-block; margin-top: 2px; font-size: 13px; color: var(--muted); text-decoration: none; direction: ltr; unicode-bidi: isolate; }
-.who a.gh:hover { color: var(--deep); text-decoration: underline; }
 .btn {
   flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px;
   border-radius: 999px; background: var(--mint); color: var(--deep); font-weight: 600; font-size: 15px; text-decoration: none;
@@ -56,12 +54,6 @@ h1 { margin: 18px 0 8px; text-align: center; font-size: clamp(34px, 9vw, 46px); 
 .btn:active { transform: scale(0.97); }
 a:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; border-radius: 999px; }
 @media (hover: hover) { .member:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -14px rgba(47, 84, 68, .4); } }
-.about {
-  margin: 30px auto 0; padding: 16px 18px; text-align: center; color: var(--deep); font-size: 15px; line-height: 1.9;
-  background: rgba(255, 255, 255, .55); border: 1px solid var(--sand); border-radius: 20px;
-}
-.about { text-wrap: balance; }
-.about a { display: inline-block; margin-top: 4px; color: var(--deep); font-weight: 600; font-size: 13px; white-space: nowrap; }
 footer { margin-top: 26px; text-align: center; color: var(--muted); font-size: 14px; }
 @media (max-width: 440px) {
   .member { flex-wrap: wrap; row-gap: 12px; }
@@ -85,26 +77,24 @@ footer { margin-top: 26px; text-align: center; color: var(--muted); font-size: 1
   <ul class="team">
     <li class="member">
       <span class="avatar" aria-hidden="true">أ</span>
-      <div class="who"><h2>أحمد الحمامي</h2><a class="gh" href="https://github.com/AHMEDALHAMAMI" rel="noopener">github.com/AHMEDALHAMAMI</a></div>
+      <div class="who"><h2>أحمد الحمامي</h2></div>
       <a class="btn" href="https://www.linkedin.com/in/ahmedalhammami" rel="noopener" aria-label="تواصل مع أحمد الحمامي عبر لينكدإن">تواصل معنا
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></a>
     </li>
     <li class="member">
       <span class="avatar" aria-hidden="true">و</span>
-      <div class="who"><h2>وليد العقل</h2><a class="gh" href="https://github.com/WaleedAlaql" rel="noopener">github.com/WaleedAlaql</a></div>
+      <div class="who"><h2>وليد العقل</h2></div>
       <a class="btn" href="https://www.linkedin.com/in/waleed-alaql" rel="noopener" aria-label="تواصل مع وليد العقل عبر لينكدإن">تواصل معنا
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></a>
     </li>
     <li class="member">
       <span class="avatar" aria-hidden="true">أ</span>
-      <div class="who"><h2>أميرة الدجاني</h2><a class="gh" href="https://github.com/AmiraAldajani" rel="noopener">github.com/AmiraAldajani</a></div>
+      <div class="who"><h2>أميرة الدجاني</h2></div>
       <a class="btn" href="https://www.linkedin.com/in/amira-aldajani-2b0296222/" rel="noopener" aria-label="تواصل مع أميرة الدجاني عبر لينكدإن">تواصل معنا
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></a>
     </li>
   </ul>
 
-  <p class="about">نسيج منصة سعودية ذكية تربط سكان الحي بالمستثمرين.
-    <br>الكود المصدري: <a href="https://github.com/WaleedAlaql/Naseej-Application" rel="noopener" dir="ltr">github.com/WaleedAlaql/Naseej-Application</a></p>
   <footer>صُنع بعناية من فريق نسيج</footer>
 </main>
 </body>
