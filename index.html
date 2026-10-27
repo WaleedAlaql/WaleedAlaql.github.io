@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فريق نسيج</title>
+<meta name="description" content="فريق نسيج: تواصل معنا عبر لينكدإن.">
+<meta property="og:title" content="فريق نسيج">
+<meta property="og:description" content="منصة سعودية ذكية تربط سكان الحي بالمستثمرين. تواصل مع الفريق.">
+<meta name="theme-color" content="#F4EDE3">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #5A7D66; --deep: #2F5444; --ivory: #FCF9F4; --sand: #EBE0D3; --sand-soft: #F4EDE3;
+  --ink: #1F2A24; --muted: #5E6A63; --mint: #E3EBE5;
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100vh; min-height: 100dvh;
+  background: radial-gradient(120% 60% at 50% 0%, var(--ivory) 0%, var(--sand-soft) 70%);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans Arabic', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  padding-inline: 20px; padding-block: max(32px, env(safe-area-inset-top)) max(28px, env(safe-area-inset-bottom));
+  display: flex; flex-direction: column; align-items: center;
+}
+main { width: 100%; max-width: 560px; }
+.logo { display: block; width: 112px; height: auto; margin: 0 auto 6px; }
+h1 { margin: 18px 0 8px; text-align: center; font-size: clamp(34px, 9vw, 46px); line-height: 1.2; font-weight: 700; color: var(--deep); }
+.sub { margin: 0 0 30px; text-align: center; color: var(--muted); font-size: 17px; }
+.team { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.member {
+  display: flex; align-items: center; gap: 16px; padding: 16px 18px;
+  background: #fff; border-radius: 28px; box-shadow: 0 8px 24px -14px rgba(47, 84, 68, .35);
+  transition: transform 180ms var(--ease), box-shadow 180ms var(--ease);
+}
+.avatar {
+  flex: none; width: 64px; height: 64px; border-radius: 50%; background: var(--mint); color: var(--deep);
+  display: grid; place-items: center; font-size: 28px; font-weight: 600;
+}
+.who { flex: 1; min-width: 0; }
+.who h2 { margin: 0; font-size: 20px; font-weight: 700; line-height: 1.4; }
+.who a.gh { display: inline-block; margin-top: 2px; font-size: 13px; color: var(--muted); text-decoration: none; direction: ltr; unicode-bidi: isolate; }
+.who a.gh:hover { color: var(--deep); text-decoration: underline; }
+.btn {
+  flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px;
+  border-radius: 999px; background: var(--mint); color: var(--deep); font-weight: 600; font-size: 15px; text-decoration: none;
+  transition: transform 160ms var(--ease), background-color 160ms var(--ease), color 160ms var(--ease);
+}
+.btn svg { width: 16px; height: 16px; }
+.btn:hover { background: var(--deep); color: #fff; }
+.btn:active { transform: scale(0.97); }
+a:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; border-radius: 999px; }
+@media (hover: hover) { .member:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -14px rgba(47, 84, 68, .4); } }
+.about {
+  margin: 30px auto 0; padding: 16px 18px; text-align: center; color: var(--deep); font-size: 15px; line-height: 1.9;
+  background: rgba(255, 255, 255, .55); border: 1px solid var(--sand); border-radius: 20px;
+}
+.about { text-wrap: balance; }
+.about a { display: inline-block; margin-top: 4px; color: var(--deep); font-weight: 600; font-size: 13px; white-space: nowrap; }
+footer { margin-top: 26px; text-align: center; color: var(--muted); font-size: 14px; }
+@media (max-width: 440px) {
+  .member { flex-wrap: wrap; row-gap: 12px; }
+  .btn { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { .member, .btn { transition: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  main > * { animation: rise 420ms var(--ease) both; }
+  main > *:nth-child(2) { animation-delay: 40ms; } main > *:nth-child(3) { animation-delay: 80ms; }
+  main > *:nth-child(4) { animation-delay: 120ms; } main > *:nth-child(5) { animation-delay: 160ms; }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="شعار نسيج" width="112" height="183">
+  <h1>فريق نسيج</h1>
+  <p class="sub">تواصل معنا عبر لينكدإن</p>
+
+  <ul class="team">
+    <li class="member">
+      <span class="avatar" aria-hidden="true">أ</span>
+      <div class="who"><h2>أحمد الحمامي</h2><a class="gh" href="https://github.com/AHMEDALHAMAMI" rel="noopener">github.com/AHMEDALHAMAMI</a></div>
+      <a class="btn" href="https://www.linkedin.com/in/ahmedalhamami" rel="noopener" aria-label="تواصل مع أحمد الحمامي عبر لينكدإن">تواصل معنا
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></a>
+    </li>
+    <li class="member">
+      <span class="avatar" aria-hidden="true">و</span>
+      <div class="who"><h2>وليد العقل</h2><a class="gh" href="https://github.com/WaleedAlaql" rel="noopener">github.com/WaleedAlaql</a></div>
+      <a class="btn" href="https://www.linkedin.com/in/waleed-alaql" rel="noopener" aria-label="تواصل مع وليد العقل عبر لينكدإن">تواصل معنا
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></a>
+    </li>
+    <li class="member">
+      <span class="avatar" aria-hidden="true">أ</span>
+      <div class="who"><h2>أميرة الدجاني</h2><a class="gh" href="https://github.com/AmiraAldajani" rel="noopener">github.com/AmiraAldajani</a></div>
+      <a class="btn" href="https://www.linkedin.com/in/amira-aldajani-2b0296222/" rel="noopener" aria-label="تواصل مع أميرة الدجاني عبر لينكدإن">تواصل معنا
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></a>
+    </li>
+  </ul>
+
+  <p class="about">نسيج منصة سعودية ذكية تربط سكان الحي بالمستثمرين.
+    <br>الكود المصدري: <a href="https://github.com/WaleedAlaql/Naseej-Application" rel="noopener" dir="ltr">github.com/WaleedAlaql/Naseej-Application</a></p>
+  <footer>صُنع بعناية من فريق نسيج</footer>
+</main>
+</body>
+</html>
